@@ -27,9 +27,8 @@ def main():
         print('Press any key to continue')
         input()
         gamedata_path = os.path.expanduser("~/Documents/DAVAProject")
-        expected_path = os.path.expanduser("~/Documents/DAVAProject")
     
-        if gamedata_path == expected_path:
+        if os.path.exists(gamedata_path):
             print('Game files found')
             donefile(gamedata_path)
         else:
