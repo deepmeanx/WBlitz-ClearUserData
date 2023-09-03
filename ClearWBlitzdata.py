@@ -28,7 +28,7 @@ def main():
         gamedata_path = os.path.expanduser("~/Documents/DAVAProject")
         expected_path = os.path.expanduser("~/Documents/DAVAProject")
     
-        if gamedata_path == expected_path:
+        if gamedata_path == ("~/Documents/DAVAProject"):
             print('Game files found')
             donefile(gamedata_path)
         else:
