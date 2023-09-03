@@ -16,6 +16,7 @@ def donefile(gamedata_path):
     try:
         shutil.rmtree(gamedata_path)
         print('Done. All game data has been deleted.')
+        input()
     except Exception as e:
         print('An error occurred while deleting the game data:', e)
 
@@ -33,6 +34,7 @@ def main():
             donefile(gamedata_path)
         else:
             print('The game files are not found')
+            input()
             exit()
     else:
         print("Please, run this program as administrator")
